@@ -77,3 +77,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Hospital-Management-System
+Hospital Management System built with complete hospital workflow modules including doctors, patients, appointments, billing, pharmacy, payroll, HR, and laboratory management. This project is currently under development and some features/functions are still being improved and optimized.
+>>>>>>> 16fc46c1cb8607f1f54b2fbabe80144010c7caeb
