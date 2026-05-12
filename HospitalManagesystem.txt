@@ -1,0 +1,79 @@
+Features and Its Modules: Hospital Management-System 
+
+1 - Managing Doctors:
+Through that panel, the user can add new listings of doctors. 
+It is possible to edit and delete the list. Records that have been deleted will be 
+shown in a tabular format that can be undeleted.
+
+2 - Managing patients:
+Managing patients: handle patient records and perform operations such as change, delete, and undelete on them.
+
+3 - Appointments:
+Appointments: Appointments can be managed in the application using the doctor’s and patients’ IDs.
+
+4 - Registration: 
+Hospital management system registration refers to the process of registering patients, staff, and medical records within a hospital management system.
+
+5 - Check-in and check-out procedures for patients:
+Check-in and check-out procedures for patients refer to the process of registering and discharging patients from a hospital or healthcare facility. 
+These procedures ensure that patients receive the appropriate care and that the hospital can properly document and bill for the services provided.
+
+6 - Automation in the laboratory:
+an instrument or set of instruments that standardize workflow in a clinical laboratory by accepting, processing, and resulting specimens. 
+Automation in the laboratory in hospital management system refers to the use of technology and machines to automate laboratory processes, 
+improve efficiency, and reduce errors in a hospital's laboratory operations.
+
+7 - Manage Pharmacy:
+Managing the pharmacy in a hospital management system involves the use of technology and processes to streamline the management of medications and pharmacy-related 
+services within a hospital. 
+
+8 - Keeping track of patients’ records:
+The patient records module of a hospital management website typically includes features such as patient registration, medical history, 
+diagnosis, treatment plans, and test results. etc
+
+9 - Managing Financial
+The financial management module of a hospital management system website typically includes features such as account management, billing and invoicing, 
+insurance claims management, and financial reporting.  
+Financial reporting involves the generation of financial reports, including income statements, balance sheets, and cash flow statements.
+
+
+10 - Keeping track of employees:
+The employee management module of a hospital management system website typically includes features such as employee profiles, work schedules, 
+time and attendance management, and performance evaluations.  Employee profiles include personal and professional information about each employee,
+including name, contact information, job title, and department. 
+
+
+12 - Payroll System for Employees:
+The payroll system module of a hospital management system website typically includes features such as employee profiles, payroll processing, 
+tax management, and benefits administration. Employee profiles include personal and professional information about each employee, including name, 
+contact information, job title, and department. 
+Payroll processing involves the calculation and processing of employee compensation, including salary, overtime, and bonuses.
+
+13 - Manage Prescriptions:
+The prescription management module of a hospital management system website typically includes features such as medication order entry, 
+drug interaction checking, medication dispensing, and medication administration documentation. Medication order 
+entry involves the electronic entry of medication orders by healthcare providers, including medication name
+
+
+14 - Consultant Doctor:
+A consultant doctor in a hospital management system website is a physician who 
+provides specialized medical advice and consultation to other healthcare providers within the hospital.
+The consultant doctor module of a hospital management system website typically includes features such as appointment scheduling, 
+patient referrals, medical consultations, and documentation. Appointment scheduling 
+involves the electronic scheduling of consultations between healthcare providers and the consultant doctor.
+
+15 - Manage Beds:
+The bed management module of a hospital management system website typically includes features such as bed availability tracking, 
+patient admission tracking, and bed assignment management. Bed availability tracking involves the electronic tracking of available beds within the hospital, 
+including the type of bed and the location within the hospital. Patient admission tracking involves the electronic tracking of patient admissions to the hospital, 
+including the patient's name, medical record number, and reason for admission.
+
+16 - Manage Human resource
+The human resource management module of a hospital management system website typically includes features such as employee information management, 
+recruitment and applicant tracking, employee onboarding and training, and performance management. Employee information management involves the electronic 
+management and tracking of employee data, including personal information, job titles, salaries, and benefits.
+
+
+
+
+
