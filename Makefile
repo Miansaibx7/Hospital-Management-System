@@ -2,7 +2,6 @@
         run test cache-clear optimize-clear \
         route-list config-clear config-cache \
         view-clear storage-link
-
 help:
 	@echo "Available commands:"
 	@echo ""
