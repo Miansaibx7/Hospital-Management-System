@@ -1,1 +1,73 @@
-# this file is under development, please do not use it yet.
+version: '3.8'
+
+services:
+  # The Laravel Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hms_app
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=hospital_db
+      - DB_USERNAME=hospital_user
+      - DB_PASSWORD=secret_password
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CACHE_DRIVER=redis
+      - QUEUE_CONNECTION=redis
+      - SESSION_DRIVER=redis
+    volumes:
+      # Syncs your local code changes instantly without needing to rebuild the container
+      - .:/var/www/html 
+    depends_on:
+      - db
+      - redis
+
+  # The MySQL Database
+  db:
+    image: mysql:8.0
+    container_name: hms_db
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=hospital_db
+      - MYSQL_USER=hospital_user
+      - MYSQL_PASSWORD=secret_password
+      - MYSQL_ROOT_PASSWORD=root_secret
+    volumes:
+      # Saves your database data permanently so it isn't lost when the container stops
+      - hms_db_data:/var/lib/mysql
+
+  # phpMyAdmin (Optional but highly recommended for database management)
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: hms_phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      - PMA_HOST=db
+      - PMA_USER=root
+      - PMA_PASSWORD=root_secret
+    depends_on:
+      - db
+
+  # Redis (For caching and handling background jobs like Payroll/Billing)
+  redis:
+    image: redis:alpine
+    container_name: hms_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+volumes:
+  hms_db_data:
